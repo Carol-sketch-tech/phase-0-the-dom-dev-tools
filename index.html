@@ -1,0 +1,49 @@
+<!-- when we select an item on the Dom of a document the 
+ the source of the file does not change. only the DOM. the source of the 
+ page does not change. -->
+
+ <!-- changing the DOM does not change the html page of the server.
+  -->
+ <!-- demonstrate opening the dectools' javascript console
+  
+1. open the inspect on the page to open the browsers developing tools
+2.click on console and at the prompt type document.
+3. hoover over the #document. it higlights the whole page on the browser.
+4. cick on the documetn and Dom html docmunet will appear.
+this is how one open the devetool's javascript console.-->
+
+<!-- we can call metods on the devtool's javascript console. -->
+
+<!-- how to select an element on the dev tool's javescript console.
+ 
+1. open insepct on the webpage tht one wants to inspect.
+2. click on the console to open  the console.
+3. type document. the method that one want to use to select an element
+4. for example 
+document.querySelector("h1");
+ when you press enter the node is printed out in the console.-->
+
+<!-- how to delete a node in deve tool's console
+ 
+ type the following the Dev tool's console
+ 1. type the node that should be deleted. example
+     document.querySelector("h1").remove();
+     whhen one checks the web page the node in this case the heading has been deleted.
+     when one reloads the page the heading return. this means that the html server document has not changed. -->
+
+     <!-- storung node references in variables 
+     methods used to select certain elements in a dom html document are expression.
+     they return a value specifically a DOM node.
+     therefore we can save the resilt of the query into a variable for example
+     
+     const header = document.querySelector("h1");
+      this means we can refer to the document.querySelector("h1"); using the header variable name.
+
+     -->
+
+
+     <!-- NOTE 
+      the DOM programming is using javascript to:
+      1.Ask the DOM to find or select an HTML elemnt or elements in the rendered page
+      2.Remove the selected elements and or insert new elements
+      3.adjest a property of the selected elements -->
